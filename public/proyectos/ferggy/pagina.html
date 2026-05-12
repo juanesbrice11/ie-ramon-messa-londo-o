@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo del Voleibol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">🏐 Voleibol</h1>
+        <ul class="menu">
+            <li><a href="pagina.html" class="activo">Inicio</a></li>
+            <li><a href="voleibol.html">Voleibol</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h2>Voley<br>el mejor deporte</h2>
+            <p>Conoce el mundo del voleibol</p>
+            <a href="voleibol.html" class="btn">Ver más</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h2>¿Qué es el Voleibol?</h2>
+        <p>Conoce los balones, jugadas y equipos del mundo del voleibol</p>
+        <div class="cards">
+            <div class="card">
+                <img src="image.png" alt="Balón de voley">
+                <h3>Balón de voley</h3>
+                <p>El balón oficial del voleibol con diseño aerodinámico para el mejor rendimiento</p>
+            </div>
+            <div class="card">
+                <img src="voley.jpg" alt="Jugadora de voleibol">
+                <h3>Jugadoras</h3>
+                <p>Las mejores jugadoras del mundo compiten en las ligas internacionales de voleibol</p>
+            </div>
+            <div class="card">
+                <img src="voley1.webp" alt="Competencia">
+                <h3>Competencia</h3>
+                <p>El voleibol se practica en más de 220 países y es uno de los deportes más populares del mundo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="pagina.html">Inicio</a></li>
+                    <li><a href="voleibol.html">Voleibol</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 300 000 0000</li>
+                    <li>📧 voleibol@ieramonmessa.edu.co</li>
+                    <li>📍 IE Ramón Messa Londoño</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 6:00 am – 8:00 pm</li>
+                    <li>Sábado: 7:00 am – 6:00 pm</li>
+                    <li>Domingo: 8:00 am – 2:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Mundo del Voleibol · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

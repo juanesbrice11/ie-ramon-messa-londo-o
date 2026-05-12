@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado | Fútbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">⚽ Fútbol</h1>
+        <ul class="menu">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Estadios.html">Estadios</a></li>
+            <li><a href="Alineaciones.html">Alineaciones</a></li>
+            <li><a href="mercado.html" class="activo">Mercado</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una página que brinda información sobre fútbol 11 y también donde se venden algunos productos de fútbol</p>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/images. la liga.png" alt="Ligas">
+                <h3>Ligas</h3>
+                <p>Las ligas más vistas del mundo</p>
+            </div>
+            <div class="card">
+                <img src="assets/istockphoto-1426419183-612x612.jpg" alt="Reglas del Campo">
+                <h3>Reglas Del Campo</h3>
+                <p>Se dará información sobre las más básicas</p>
+            </div>
+            <div class="card">
+                <img src="assets/pngtree-football-line-up-design-png-image_10543888.png" alt="Alineaciones">
+                <h3>Alineaciones</h3>
+                <p>Desde la 4-3-3 hasta las menos habladas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="intro">
+        <h2>Productos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/balon-futbol-11-joma-flame-t5 copy.webp" alt="Balón profesional">
+                <h3>Balón profesional</h3>
+                <p>Es un balón original de la marca golty</p>
+                <h5 class="precio">$200.000</h5>
+            </div>
+            <div class="card">
+                <img src="assets/guayos-predator-elite-lengueta-plegable-terreno-firme.avif" alt="Guayos Adidas">
+                <h3>Guayos Adidas</h3>
+                <p>Botines super seguros y cómodos</p>
+                <h5 class="precio">$150.000</h5>
+            </div>
+            <div class="card">
+                <img src="assets/GuantesdearqueroEliteWarriorJMPpal.webp" alt="Guantes Golty">
+                <h3>Guantes golty Profesional</h3>
+                <p>Guantes cómodos y seguros</p>
+                <h5 class="precio">$230.000</h5>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="pagina.html">Inicio</a></li>
+                    <li><a href="Estadios.html">Estadios</a></li>
+                    <li><a href="Alineaciones.html">Alineaciones</a></li>
+                    <li><a href="mercado.html">Mercado</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 +57 315 895 3438</li>
+                    <li>📍 Calle 85 # 12-45, Bogotá D.C.</li>
+                    <li>✉️ contacto.servicios@outlook.com.co</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Lunes y Viernes: 8:30 a.m. – 3:45 p.m.</li>
+                    <li>Sábados: 9:00 a.m. – 3:00 p.m.</li>
+                    <li>Domingo y Festivos: 9:00 a.m. – 2:00 p.m.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Fútbol · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -120,7 +120,7 @@ export default function StudentProjects() {
             proyectos publicados
           </p>
           <div className="flex flex-wrap gap-2">
-            {["Todos", "Grado 8°", "Grado 9°", "Grado 10°", "Grado 11°"].map(
+            {["Todos", "Grado 8°", "Grado 11°"].map(
               (filter) => (
                 <button
                   key={filter}

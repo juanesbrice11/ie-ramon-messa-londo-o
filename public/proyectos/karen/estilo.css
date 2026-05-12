@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #040a0f;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgb(239, 104, 174);
+}
+
+.menu{
+   list-style: none; 
+   display: flex;
+   gap: 25px;
+}
+
+.menu a{
+    color: #050606;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+}
+
+.hero{
+    height: 80vh;
+    background-image: url("./assets/image1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay{
+
+    height: 100%;
+    color: #ece8eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.btn{
+    margin-top: 20px;
+background-color: rgb(239, 91, 212);
+color: #000;
+padding: 12px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+transition: transform 0.3s
+}
+
+.btn:hover{
+transform: scale(1.1);
+}
+
+section{
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.cards{
+    background: rgb(243, 240, 242);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgb(205, 110, 191);
+   transition: transform 0.3s;
+}
+
+.cards:hover{
+    transform: translateY(10px);
+}
+
+.cards img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.footer{
+    background: #ec77cf;
+    color: #000;
+    padding: 40px 20px 20px;
+}
+
+.footer-grid{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto 30 px;
+    text-align: left;
+}
+
+.footer-col h4{
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.footer-col ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li{
+    margin-bottom: 6px;
+    font: 0.9rem;
+    opacity: 0.85;
+}
+
+.footer-col ul li a{
+    color: #000;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.footer-col ul li a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+

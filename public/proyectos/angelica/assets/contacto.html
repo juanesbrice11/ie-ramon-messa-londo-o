@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Comidas Rápidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">COMIDAS RÁPIDAS</h1>
+        <ul class="menú">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicio.html">Servicio</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>Contáctanos</h2>
+        <p>Diferentes referencias de contacto:</p>
+        <div class="cards">
+            <div class="card">
+                <h3>📞 Teléfono</h3>
+                <p>3244092979</p>
+                <p>Disponible Lun – Sáb de 6:00 am a 8:00 pm</p>
+            </div>
+            <div class="card">
+                <h3>📧 Correo</h3>
+                <p>avelascom@ieramonmessa.edu.co</p>
+                <p>Respondemos en menos de 24 horas</p>
+            </div>
+            <div class="card">
+                <h3>📍 Dirección</h3>
+                <p>Calle principal #12-16</p>
+                <p>Manizales, Caldas, Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="max-width:600px; margin:0 auto; padding:40px 30px;">
+        <h2>Envíanos un mensaje</h2>
+        <br>
+        <form style="display:flex; flex-direction:column; gap:12px;">
+            <input type="text" placeholder="Nombre" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem;">
+            <input type="email" placeholder="Correo electrónico" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem;">
+            <textarea placeholder="Tu mensaje" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem; height:120px; resize:vertical;"></textarea>
+            <button type="submit" style="padding:12px; background:rgb(154,23,136); color:white; border:none; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer;">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 3244092979</li>
+                    <li>📧 avelascom@ieramonmessa.edu.co</li>
+                    <li>📍 Calle principal #12-16</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 6:00 am – 8:00 pm</li>
+                    <li>Sábado: 7:00 am – 6:00 pm</li>
+                    <li>Domingo: 8:00 am – 2:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Comidas Rápidas · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menú').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

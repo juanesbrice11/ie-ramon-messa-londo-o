@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Comidas Rápidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">COMIDAS RÁPIDAS</h1>
+        <ul class="menú">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html" class="activo">Productos</a></li>
+            <li><a href="servicio.html">Servicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>Nuestros productos</h2>
+        <p>Nuestro catálogo contiene los siguientes productos de excelente calidad:</p>
+        <div class="cards">
+            <div class="card">
+                <img src="imagen1.png" alt="Hamburguesas">
+                <h3>Hamburguesas</h3>
+                <p>Ricas y Nutritivas</p>
+                <h5>15.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Pizzas">
+                <h3>Pizzas</h3>
+                <p>Suave y con mucho queso</p>
+                <h5>20.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Burritos">
+                <h3>Burritos</h3>
+                <p>Envueltos con mucho sabor</p>
+                <h5>13.000</h5>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="imagen1.png" alt="Arepas Rellenas">
+                <h3>Arepas Rellenas</h3>
+                <p>Carne blandita</p>
+                <h5>15.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Choripan">
+                <h3>Choripan</h3>
+                <p>Pan recién horneado</p>
+                <h5>8.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Salchipapa">
+                <h3>Salchipapa</h3>
+                <p>Papas crujientes</p>
+                <h5>17.000</h5>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="imagen1.png" alt="Suiza">
+                <h3>Suiza</h3>
+                <p>Alimentos de alta calidad</p>
+                <h5>12.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Nachos">
+                <h3>Nachos</h3>
+                <p>Con diferentes salsas y con muucho queso</p>
+                <h5>10.000</h5>
+            </div>
+            <div class="card">
+                <img src="imagen1.png" alt="Hot Dogs">
+                <h3>Hot Dogs</h3>
+                <p>Salchicha con un buen sabor</p>
+                <h5>11.000</h5>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 3244092979</li>
+                    <li>📧 avelascom@ieramonmessa.edu.co</li>
+                    <li>📍 Calle principal #12-16</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 6:00 am – 8:00 pm</li>
+                    <li>Sábado: 7:00 am – 6:00 pm</li>
+                    <li>Domingo: 8:00 am – 2:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Comidas Rápidas · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menú').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

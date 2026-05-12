@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Maquillaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">💋 MAQUILLAJE</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html" class="activo">Servicios</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>Nuestros Servicios</h2>
+        <p>Todo lo que necesitas para verte y sentirte bien</p>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/image copy 2.png" alt="Asesoría de imagen">
+                <h3>Asesoría de imagen</h3>
+                <p>Te orientamos para encontrar el estilo que mejor va contigo</p>
+            </div>
+            <div class="card">
+                <img src="assets/image copy 3.png" alt="Maquillaje profesional">
+                <h3>Maquillaje profesional</h3>
+                <p>Aplicación de maquillaje para eventos especiales y sesiones fotográficas</p>
+            </div>
+            <div class="card">
+                <img src="vogue.png" alt="Cuidado de la piel">
+                <h3>Cuidado de la piel</h3>
+                <p>Rutinas personalizadas según tu tipo de piel y necesidades</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/image copy 4.png" alt="Clases de maquillaje">
+                <h3>Clases de maquillaje</h3>
+                <p>Aprende técnicas profesionales con nuestros expertos</p>
+            </div>
+            <div class="card">
+                <img src="prosa.png" alt="Maquillaje para eventos">
+                <h3>Maquillaje para eventos</h3>
+                <p>Look perfecto para bodas, quince años y eventos especiales</p>
+            </div>
+            <div class="card">
+                <img src="IMAGEN.png" alt="Tratamientos faciales">
+                <h3>Tratamientos faciales</h3>
+                <p>Cuida tu piel con nuestros tratamientos especializados</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 300 000 0000</li>
+                    <li>📧 maquillaje@ieramonmessa.edu.co</li>
+                    <li>📍 IE Ramón Messa Londoño</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 8:00 am – 6:00 pm</li>
+                    <li>Sábado: 9:00 am – 4:00 pm</li>
+                    <li>Domingo: Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Maquillaje · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Maquillaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">💋 MAQUILLAJE</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contactos.html" class="activo">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>Contáctanos</h2>
+        <p>Estamos aquí para ayudarte. ¡Escríbenos!</p>
+        <div class="cards">
+            <div class="card">
+                <h3>📞 Teléfono</h3>
+                <p>300 000 0000</p>
+                <p>Disponible Lun – Sáb de 8:00 am a 6:00 pm</p>
+            </div>
+            <div class="card">
+                <h3>📧 Correo</h3>
+                <p>maquillaje@ieramonmessa.edu.co</p>
+                <p>Respondemos en menos de 24 horas</p>
+            </div>
+            <div class="card">
+                <h3>📍 Dirección</h3>
+                <p>IE Ramón Messa Londoño</p>
+                <p>Manizales, Caldas, Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="max-width:600px; margin:0 auto; padding:40px 30px;">
+        <h2>Envíanos un mensaje</h2>
+        <br>
+        <form class="formulario" style="display:flex; flex-direction:column; gap:12px;">
+            <input type="text" placeholder="Nombre" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem;">
+            <input type="email" placeholder="Correo electrónico" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem;">
+            <textarea placeholder="Tu mensaje" style="padding:12px 15px; border-radius:8px; border:1px solid #ccc; font-family:inherit; font-size:0.95rem; height:120px; resize:vertical;"></textarea>
+            <button type="submit" style="padding:12px; background:rgb(104,147,239); color:white; border:none; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer;">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 300 000 0000</li>
+                    <li>📧 maquillaje@ieramonmessa.edu.co</li>
+                    <li>📍 IE Ramón Messa Londoño</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 8:00 am – 6:00 pm</li>
+                    <li>Sábado: 9:00 am – 4:00 pm</li>
+                    <li>Domingo: Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Maquillaje · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

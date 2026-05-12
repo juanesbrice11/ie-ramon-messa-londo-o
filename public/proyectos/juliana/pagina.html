@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">⚽ Fútbol</h1>
+        <ul class="menu">
+            <li><a href="pagina.html" class="activo">Inicio</a></li>
+            <li><a href="Estadios.html">Estadios</a></li>
+            <li><a href="Alineaciones.html">Alineaciones</a></li>
+            <li><a href="mercado.html">Mercado</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h2>Donde rueda el balón,<br>nace la emoción</h2>
+            <p>Reclutamiento de las leyendas</p>
+            <a href="Estadios.html" class="btn">Ver Ligas</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una página que brinda información sobre fútbol 11 y también donde se venden algunos productos de fútbol</p>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/images. la liga.png" alt="Ligas">
+                <h3>Ligas</h3>
+                <p>Las ligas más vistas del mundo</p>
+            </div>
+            <div class="card">
+                <img src="assets/istockphoto-1426419183-612x612.jpg" alt="Reglas del Campo">
+                <h3>Reglas Del Campo</h3>
+                <p>Se dará información sobre las más básicas</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&auto=format&fit=crop&q=80" alt="Alineaciones">
+                <h3>Alineaciones</h3>
+                <p>Desde la 4-3-3 hasta las menos habladas</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="pagina.html">Inicio</a></li>
+                    <li><a href="Estadios.html">Estadios</a></li>
+                    <li><a href="Alineaciones.html">Alineaciones</a></li>
+                    <li><a href="mercado.html">Mercado</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 +57 315 895 3438</li>
+                    <li>📍 Calle 85 # 12-45, Bogotá D.C.</li>
+                    <li>✉️ contacto.servicios@outlook.com.co</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Lunes y Viernes: 8:30 a.m. – 3:45 p.m.</li>
+                    <li>Sábados: 9:00 a.m. – 3:00 p.m.</li>
+                    <li>Domingo y Festivos: 9:00 a.m. – 2:00 p.m.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Fútbol · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

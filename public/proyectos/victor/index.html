@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Futsal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">🏟️ CENTRO FUTSAL</h1>
+        <ul class="menu">
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="calzado.html">Calzado</a></li>
+            <li><a href="balones.html">Balones</a></li>
+            <li><a href="cancha.html">Canchas</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <h2>Estilo y originalidad<br>Solo aquí</h2>
+            <p>Regate, estilo y concentración total</p>
+            <a href="calzado.html" class="btn">Ver estilo de juego</a>
+        </div>
+    </header>
+
+    <section class="intro">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una página que se encarga en obtener información del futsal como el estilo de juego y la conexión de los jugadores y estilo de los uniformes</p>
+        <div class="cards">
+            <div class="card">
+                <img src="balones.png" alt="Balones">
+                <h3>Balones</h3>
+                <p>¿Quieres acostumbrarte a un balón de buena calidad?</p>
+            </div>
+            <div class="card">
+                <img src="calzados.png" alt="Calzado">
+                <h3>Calzado para el juego</h3>
+                <p>¿Quieres tener un mejor regate y un agarre al suelo de las canchas?</p>
+            </div>
+            <div class="card">
+                <img src="cancha 1.png" alt="Canchas">
+                <h3>Canchas</h3>
+                <p>¿Sabes qué son las canchas lisas? Son las más populares del futsal profesional</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="calzado.html">Calzado</a></li>
+                    <li><a href="balones.html">Balones</a></li>
+                    <li><a href="cancha.html">Canchas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 312 845 7291</li>
+                    <li>📧 jh.gananbueno@gmail.com</li>
+                    <li>📍 Calle 45 #23-18, Barrio San Fernando, Cali</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lunes a Viernes: 6:00 am – 7:30 pm</li>
+                    <li>Sábado: 7:00 am – 6:30 pm</li>
+                    <li>Domingo: 8:00 am – 4:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Centro Futsal · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Gill Sans', sans-serif;
+    background: #f0eaff;
+    color: #2d1b5e;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(125, 88, 238, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    transition: opacity 0.2s;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #e2d4ff;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after,
+.menu a.activo::after {
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background-image: url("voley 3.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 20px;
+    background: white;
+    color: blueviolet;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* SECCIONES */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.intro p,
+.galeria p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* CONTACTO */
+.contacto-section {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 50px 40px;
+    text-align: center;
+}
+
+.contacto-section p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.formulario textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.formulario button {
+    padding: 12px;
+    background: rgba(125, 88, 238, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background: #5a3bb5;
+}
+
+/* FOOTER */
+.footer {
+    background: #3b1a7a;
+    color: #e8d8ff;
+    padding: 40px 20px 20px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    color: #d4b8ff;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.footer-col ul li a {
+    color: #e8d8ff;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+
+    .contacto-section {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}

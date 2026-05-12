@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadios | Fútbol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">⚽ Fútbol</h1>
+        <ul class="menu">
+            <li><a href="pagina.html">Inicio</a></li>
+            <li><a href="Estadios.html" class="activo">Estadios</a></li>
+            <li><a href="Alineaciones.html">Alineaciones</a></li>
+            <li><a href="mercado.html">Mercado</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>Estadios</h2>
+        <p>Los estadios de Inglaterra</p>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/Wembley_Stadium_interior.jpg" alt="Estadio de Wembley">
+                <h3>Estadio de Wembley</h3>
+                <p>Londres</p>
+            </div>
+            <div class="card">
+                <img src="assets/Old_Trafford_inside_20060726_1.jpg" alt="Old Trafford">
+                <h3>Old Trafford</h3>
+                <p>Mánchester</p>
+            </div>
+            <div class="card">
+                <img src="assets/Tottenham_Hotspur_Stadium_March_2019_-_view_from_east.jpg" alt="Tottenham Hotspur Stadium">
+                <h3>Tottenham Hotspur Stadium</h3>
+                <p>Londres</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/FloodlitLondonStadium.jpg" alt="Estadio de Londres">
+                <h3>Estadio de Londres</h3>
+                <p>Londres</p>
+            </div>
+            <div class="card">
+                <img src="assets/Anfield,_20_October_2012.jpg" alt="Anfield">
+                <h3>Anfield</h3>
+                <p>Liverpool</p>
+            </div>
+            <div class="card">
+                <img src="assets/Arsenal_vs_Real_Madrid-bigger-view.jpg" alt="Emirates Stadium">
+                <h3>Emirates Stadium</h3>
+                <p>Londres</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/Manchester_City_Football_Club_Etihad_Stadium_-_panoramio.jpg" alt="Etihad Stadium">
+                <h3>Etihad Stadium</h3>
+                <p>Manchester</p>
+            </div>
+            <div class="card">
+                <img src="assets/330px-Goodisonview1.jpg" alt="Everton Stadium">
+                <h3>Everton Stadium</h3>
+                <p>Liverpool</p>
+            </div>
+            <div class="card">
+                <img src="assets/330px-Villa_Park.jpg" alt="Villa Park">
+                <h3>Villa Park</h3>
+                <p>Birmingham</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="pagina.html">Inicio</a></li>
+                    <li><a href="Estadios.html">Estadios</a></li>
+                    <li><a href="Alineaciones.html">Alineaciones</a></li>
+                    <li><a href="mercado.html">Mercado</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 +57 315 895 3438</li>
+                    <li>📍 Calle 85 # 12-45, Bogotá D.C.</li>
+                    <li>✉️ contacto.servicios@outlook.com.co</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <ul>
+                    <li>Lunes y Viernes: 8:30 a.m. – 3:45 p.m.</li>
+                    <li>Sábados: 9:00 a.m. – 3:00 p.m.</li>
+                    <li>Domingo y Festivos: 9:00 a.m. – 2:00 p.m.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Fútbol · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

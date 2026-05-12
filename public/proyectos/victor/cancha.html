@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canchas | Centro Futsal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">🏟️ CENTRO FUTSAL</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="calzado.html">Calzado</a></li>
+            <li><a href="balones.html">Balones</a></li>
+            <li><a href="cancha.html" class="activo">Canchas</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>CANCHAS</h2>
+        <p>Busca tu estilo de zapatos para tus partidos</p>
+        <div class="cards">
+            <div class="card">
+                <img src="cancha 1.png" alt="Cancha Lisa">
+                <h3>Cancha lisa</h3>
+                <p>¿Sabes qué son las canchas lisas? Son las más populares del futsal profesional</p>
+            </div>
+            <div class="card">
+                <img src="assets/Futsal.png" alt="Cancha cubierta">
+                <h3>Cancha cubierta</h3>
+                <p>Juega sin importar el clima, las canchas cubiertas garantizan el mejor juego</p>
+            </div>
+            <div class="card">
+                <img src="formacion 2.png" alt="Formaciones en cancha">
+                <h3>Formaciones en cancha</h3>
+                <p>¿Quieres saber cómo formar bien a tus jugadores en la cancha?</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img src="assets/ramon futsal.png" alt="Centro Futsal">
+                <h3>Nuestro centro</h3>
+                <p>Instalaciones de primera calidad para disfrutar del mejor futsal</p>
+            </div>
+            <div class="card">
+                <img src="assets/futsal 2.png" alt="Cancha profesional">
+                <h3>Cancha profesional</h3>
+                <p>Cancha reglamentaria para torneos y campeonatos oficiales</p>
+            </div>
+            <div class="card">
+                <img src="balones.png" alt="Alquiler de cancha">
+                <h3>Alquiler de cancha</h3>
+                <p>Reserva tu cancha por hora para entrenar con tu equipo</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="calzado.html">Calzado</a></li>
+                    <li><a href="balones.html">Balones</a></li>
+                    <li><a href="cancha.html">Canchas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 312 845 7291</li>
+                    <li>📧 jh.gananbueno@gmail.com</li>
+                    <li>📍 Calle 45 #23-18, Barrio San Fernando, Cali</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lunes a Viernes: 6:00 am – 7:30 pm</li>
+                    <li>Sábado: 7:00 am – 6:30 pm</li>
+                    <li>Domingo: 8:00 am – 4:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Centro Futsal · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Cosmetología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1 class="logo">💄 COSMETOLOGÍA</h1>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="contacto-section">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas o quieres una asesoría? ¡Escríbenos!</p>
+        <p>📞 324 409 2979 &nbsp;|&nbsp; 📧 avelascom@ieramonmessa.edu.co</p>
+        <p>📍 IE Ramón Messa Londoño, Manizales</p>
+        <h3 style="margin-top:30px; margin-bottom:10px;">Envíanos un mensaje</h3>
+        <form class="formulario">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo electrónico">
+            <textarea placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 324 409 2979</li>
+                    <li>📧 avelascom@ieramonmessa.edu.co</li>
+                    <li>📍 IE Ramón Messa Londoño</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 6:00 am – 8:00 pm</li>
+                    <li>Sábado: 7:00 am – 6:00 pm</li>
+                    <li>Domingo: 8:00 am – 2:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Cosmetología · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

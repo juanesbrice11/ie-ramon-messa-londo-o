@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio | Comidas Rápidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">COMIDAS RÁPIDAS</h1>
+        <ul class="menú">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="servicio.html" class="activo">Servicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    </nav>
+
+    <section class="intro">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una organización especializada en crear y cocinar las mejores comidas rápidas de todo el mundo.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>¿Cuánto tiempo llevamos?</h3>
+                <p>Llevamos 5 años produciendo alimentos de alta calidad, ricos en proteínas para entregar un buen servicio a la comunidad. Dedicándonos a mejorar cada día y a cumplir cada una de sus peticiones.</p>
+            </div>
+            <div class="card">
+                <h3>¿Qué ofrecemos?</h3>
+                <p>Diferente variedad de comida rica en minerales, carbohidratos y con panes horneados desde nuestros diferentes puntos de venta. Procurándonos de que disfrutes cada bocado de un pan fresco y tostadito.</p>
+            </div>
+            <div class="card">
+                <h3>¿Con quién tenemos colaboración?</h3>
+                <p>Trabajamos con proveedores locales de Manizales que nos garantizan ingredientes frescos y de la mejor calidad cada día.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>NAVEGACIÓN</h4>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="servicio.html">Servicio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📞 3244092979</li>
+                    <li>📧 avelascom@ieramonmessa.edu.co</li>
+                    <li>📍 Calle principal #12-16</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Horarios</h4>
+                <ul>
+                    <li>Lun – Vie: 6:00 am – 8:00 pm</li>
+                    <li>Sábado: 7:00 am – 6:00 pm</li>
+                    <li>Domingo: 8:00 am – 2:00 pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Comidas Rápidas · IE Ramón Messa Londoño</div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menú').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
